@@ -144,7 +144,7 @@ armor:register_armor("gum:gum_boots", {
 	inventory_image = "gum_inv_boots.png",
 	texture = "gum_boots.png",
 	preview = "gum_boots_preview.png",
-	groups = {armor_feet=1, armor_use=1500, physics_speed=0.1, flammable=1},
+	groups = {armor_feet=1, armor_use=1400, physics_speed=0.1, flammable=1},
 	armor_groups = {fleshy=10, radiation=10},
 	damage_groups = {cracky=3, snappy=3, choppy=3, crumbly=3, level=1},
 	reciprocate_damage = true,
