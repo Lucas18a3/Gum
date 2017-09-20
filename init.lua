@@ -144,7 +144,7 @@ armor:register_armor("gum:gum_boots", {
 	inventory_image = "gum_inv_boots.png",
 	texture = "gum_boots.png",
 	preview = "gum_boots_preview.png",
-	groups = {armor_feet=1, armor_use=1400, physics_speed=0.1, flammable=1},
+	groups = {armor_feet=1, armor_use=1500, physics_speed=0.1, flammable=1},
 	armor_groups = {fleshy=10, radiation=10},
 	damage_groups = {cracky=3, snappy=3, choppy=3, crumbly=3, level=1},
 	reciprocate_damage = true,
@@ -264,6 +264,25 @@ minetest.register_craft({
    }
 })
 
+if armor.materials.gum then
+	armor:register_armor("gum:shield_gum", {
+		description = ("Gum Shield"),
+		inventory_image = "shields_inv_shield_gum.png",
+		groups = {armor_shield=1, armor_heal=0, armor_use=1500, flammable=1},
+		armor_groups = {fleshy=5},
+		damage_groups = {cracky=3, snappy=2, choppy=3, crumbly=2, level=1},
+		reciprocate_damage = true,
+		on_damage = function(player, index, stack)
+			play_sound_effect(player, "default_wood_footstep")
+		end,
+		on_destroy = function(player, index, stack)
+			play_sound_effect(player, "default_wood_footstep")
+		end,
+	})
+	
+	
+	
+	
 --node_box = {
  --       type = "fixed",
    --     fixed = {-15/32, 13/32, -15/32, -13/32, 1/2, -13/32},
