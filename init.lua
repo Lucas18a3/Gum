@@ -264,21 +264,21 @@ minetest.register_craft({
    }
 })
 
-if armor.materials.gum then
-	armor:register_armor("gum:shield_gum", {
-		description = ("Gum Shield"),
-		inventory_image = "shields_inv_shield_gum.png",
-		groups = {armor_shield=1, armor_heal=0, armor_use=1500, flammable=1},
-		armor_groups = {fleshy=5},
-		damage_groups = {cracky=3, snappy=2, choppy=3, crumbly=2, level=1},
-		reciprocate_damage = true,
-		on_damage = function(player, index, stack)
-			play_sound_effect(player, "default_wood_footstep")
-		end,
-		on_destroy = function(player, index, stack)
-			play_sound_effect(player, "default_wood_footstep")
-		end,
-	})
+--if armor.materials.gum then
+	--armor:register_armor("gum:shield_gum", {
+	--	description = ("Gum Shield"),
+	--	inventory_image = "shields_inv_shield_gum.png",
+	--	groups = {armor_shield=1, armor_heal=0, armor_use=1500, flammable=1},
+	--	armor_groups = {fleshy=5},
+	--	damage_groups = {cracky=3, snappy=2, choppy=3, crumbly=2, level=1},
+	--	reciprocate_damage = true,
+	--	on_damage = function(player, index, stack)
+	--		play_sound_effect(player, "default_wood_footstep")
+	--	end,
+	--	on_destroy = function(player, index, stack)
+	--		play_sound_effect(player, "default_wood_footstep")
+--		end,
+--	})
 	
 	
 	
