@@ -302,6 +302,7 @@ minetest.register_node("gum:gumdirt", {
 		"default_dry_grassgum.png",
 		"default_dirtgum.png",
         "default_dry_grass_sidegum.png",
+		   
 	  {name = "default_dirtgum.png^default_dry_grass_sidegum.png"}
     },
     is_ground_content = true,
@@ -317,6 +318,27 @@ minetest.register_craft({
    {"","", ""},
    }
 })
+
+minetest.register_node("gum:woodgum", {
+    description = "Gum Wood",
+    tiles = {  
+		"default_woodgum.png" ,
+    },
+    is_ground_content = true,
+    groups = {choppy = 2,wood = 1 , oddly_breakable_by_hand = 2},
+    drop = "gum:woodgum"
+})
+
+minetest.register_craft({
+    output = "gum:woodgum 1",
+    recipe = {
+   {"","", ""},
+   {"default:wood","gum:gum", ""},
+   {"","", ""},
+   }
+})
+
+
 
 
 
