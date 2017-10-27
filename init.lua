@@ -294,3 +294,41 @@ minetest.register_craft({
   --  },
 --})
 -- Comment ca marche ?
+
+
+minetest.register_node("gum:gumdirt", {
+    description = "Gum Dirt",
+    tiles = {  
+		"default_dry_grassgum.png",
+		"default_dirtgum.png",
+        "default_dry_grass_sidegum.png",
+	  {name = "default_dirtgum.png^default_dry_grass_sidegum.png"}
+    },
+    is_ground_content = true,
+    groups = {crumbly = 3},
+    drop = "gum:gumdirt"
+})
+
+minetest.register_craft({
+    output = "gum:gumdirt 1",
+    recipe = {
+   {"","", ""},
+   {"default:dirt","gum:gum", ""},
+   {"","", ""},
+   }
+})
+
+
+
+
+--minetest.register_node("default:dirt_with_grass", {
+	--description = "Dirt with Grass",
+	--tiles = {"default_grass.png", "default_dirt.png",
+	--	{name = "default_dirt.png^default_grass_side.png",
+		--	tileable_vertical = false}},
+	--groups = {crumbly = 3, soil = 1, spreading_dirt_type = 1},
+	--drop = 'default:dirt',
+	--sounds = default.node_sound_dirt_defaults({
+	--	footstep = {name = "default_grass_footstep", gain = 0.25},
+	--}),
+--})
