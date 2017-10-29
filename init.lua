@@ -310,14 +310,14 @@ minetest.register_node("gum:gumdirt", {
     drop = "gum:gumdirt"
 })
 
-minetest.register_craft({
-    output = "gum:gumdirt 1",
-    recipe = {
-   {"","", ""},
-   {"default:dirt","gum:gum", ""},
-   {"","", ""},
-   }
-})
+--minetest.register_craft({
+  --  output = "gum:gumdirt 1",
+   -- recipe = {
+   --{"","", ""},
+   --{"default:dirt","gum:gum", ""},
+  -- {"","", ""},
+  -- }
+--})
 
 minetest.register_node("gum:woodgum", {
     description = "Gum Wood",
