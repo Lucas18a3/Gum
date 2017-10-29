@@ -338,6 +338,55 @@ minetest.register_craft({
    }
 })
 
+minetest.register_node("gum:treegum", {
+    description = "Gum Tree",
+    tiles = {  
+		"default_pine_tree_topgum.png" ,
+		"default_pine_tree_topgum.png" ,
+		"default_pine_treegum.png" ,
+		"default_pine_treegum.png" ,
+		"default_pine_treegum.png" ,
+		"default_pine_treegum.png" ,
+		{name = "default_pine_tree_topgum.png^default_pine_treegum.png"}
+    },
+    is_ground_content = true,
+    groups = {choppy = 2,wood = 1 , oddly_breakable_by_hand = 2},
+    drop = "gum:treegum"
+})
+
+minetest.register_craft({
+    output = "gum:treegum 1",
+    recipe = {
+   {"","", ""},
+   {"default:pine_tree","gum:gum", ""},
+   {"","", ""},
+   }
+})
+minetest.register_craft({
+    output = "gum:treegum 1",
+    recipe = {
+   {"","", ""},
+   {"default:acacia_tree","gum:gum", ""},
+   {"","", ""},
+   }
+})
+minetest.register_craft({
+    output = "gum:treegum 1",
+    recipe = {
+   {"","", ""},
+   {"default:tree","gum:gum", ""},
+   {"","", ""},
+   }
+})
+minetest.register_craft({
+    output = "gum:treegum 1",
+    recipe = {
+   {"","", ""},
+   {"default:jungletree","gum:gum", ""},
+   {"","", ""},
+   }
+})
+
 
 
 
