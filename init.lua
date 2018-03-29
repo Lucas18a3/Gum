@@ -166,7 +166,7 @@ minetest.register_craft({
     output = "gum:gum_boots",
     recipe = {
    {"","", ""},
-   {"gum:gum","gum:gum", "gum:gum"},
+   {"gum:gum","", "gum:gum"},
    {"gum:gum","", "gum:gum"},
    }
 })
